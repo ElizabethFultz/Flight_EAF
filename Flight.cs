@@ -94,7 +94,7 @@ namespace Flight_EAF
 
 			sb.Append(airLineName + " " + flightNumber + "\n");
 			sb.Append(originCity.GetName() + " to " + destinationCity.GetName() + "\n");
-			sb.Append("Distance: " + this.CalcDistanceToFly() + " miles.\n");
+			sb.Append("Distance: " + Math.Round(this.CalcDistanceToFly(),3) + " miles.\n");
 
 			return sb.ToString();
 		}//end PrintFlightDetails
@@ -103,7 +103,7 @@ namespace Flight_EAF
 		 * getter for airLineName
 		 * @return
 		 */
-		public String GetAirLineName()
+		public String GetAirLineName() 
 		{
 			return airLineName;
 		}//end GetAirline
